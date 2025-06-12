@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %} Home {% endblock %}
+
+{% block content %}
+    <p>Il s’agit d’une application Web qui intègre FastAPI et Dash pour la visualisation de données météo.</p>
+
+    <div class="info-box">
+        <h2>Aujourd’hui est {{ Info.date }} et maintenant est {{ Info.time }}</h2>
+
+        <p>Information de Météo :</p>
+        <p>{{ Info.weather.city }}</p>
+        <p>{{ Info.weather.temperature }}</p>
+        <p>{{ Info.weather.description }}</p>
+    </div>
+{% endblock %}
