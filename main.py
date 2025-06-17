@@ -28,7 +28,8 @@ templates = Jinja2Templates(directory=templates_dir)
 user = {"admin": "123"}
 
 
-External_API_URL='http://localhost:8001/info'
+# External_API_URL='http://localhost:8001/info'
+External_API_URL='https://weatherappi-hebaffd2bef7c6dj.canadaeast-01.azurewebsites.net/info'
 
 def get_external_info():
     try:

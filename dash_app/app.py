@@ -7,7 +7,8 @@ app = dash.Dash(__name__, requests_pathname_prefix='/dashboard/')
 
 # Récupération des Infos météo via ton API FastAPI
 try:
-    response = requests.get("http://localhost:8001/info")
+    #response = requests.get("http://localhost:8001/info")
+    response = requests.get("https://weatherappi-hebaffd2bef7c6dj.canadaeast-01.azurewebsites.net/info")
     if response.status_code == 200:
         Info = response.json()
     else:
