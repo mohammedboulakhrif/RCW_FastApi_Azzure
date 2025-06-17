@@ -52,7 +52,7 @@ def get_external_info():
 @app.get("/", response_class=HTMLResponse)
 async def home_page(request: Request):
     info=get_external_info()
-    return templates.TemplateResponse("home.html", {
+    return templates.TemplateResponse("home.html", { #ici ou on a passer les info a home.html
         "request": request,
         "Info":info,
         "message": "Bienvenue sur ma page home de l’API FastAPI"
