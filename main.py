@@ -17,8 +17,8 @@ app = FastAPI()
 
 # Répertoires corrigés (templates et static sont dans fastapi_app/)
 base_dir = os.path.dirname(__file__)
-templates_dir = os.path.join(base_dir, "fastapi_app", "templates")
-static_dir = os.path.join(base_dir, "fastapi_app", "static")
+templates_dir = os.path.join(base_dir, "fastApi_app", "templates")
+static_dir = os.path.join(base_dir, "fastApi_app", "static")
 
 # Montage des fichiers statiques et des templates
 app.mount("/static", StaticFiles(directory=static_dir), name="static")
